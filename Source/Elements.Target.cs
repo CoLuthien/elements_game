@@ -5,11 +5,11 @@ using System.Collections.Generic;
 
 public class ElementsTarget : TargetRules
 {
-	public ElementsTarget( TargetInfo Target) : base(Target)
-	{
-		Type = TargetType.Game;
-		DefaultBuildSettings = BuildSettingsVersion.V2;
-		IncludeOrderVersion = EngineIncludeOrderVersion.Unreal5_1;
-		ExtraModuleNames.Add("Elements");
-	}
+    public ElementsTarget(TargetInfo Target) : base(Target)
+    {
+        Type = TargetType.Game;
+        DefaultBuildSettings = BuildSettingsVersion.V2;
+        IncludeOrderVersion = EngineIncludeOrderVersion.Unreal5_1;
+        ExtraModuleNames.Add("Elements");
+    }
 }

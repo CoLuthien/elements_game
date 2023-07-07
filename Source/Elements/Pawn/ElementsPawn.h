@@ -3,10 +3,10 @@
 
 #include <GameFramework/Pawn.h>
 
-#include "ElementPawn.generated.h"
+#include "ElementsPawn.generated.h"
 
 UCLASS(Abstract, BlueprintType)
-class ELEMENTS_API AElementPawn : public APawn
+class ELEMENTS_API AElementsPawn : public APawn
 {
     GENERATED_BODY()
 public:
