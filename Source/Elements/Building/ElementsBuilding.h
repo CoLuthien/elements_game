@@ -17,14 +17,14 @@ public: // Actor Interfaces
     virtual void BeginPlay() override;
 
 public:
+    virtual int32 GetTeamId() const override;
+    virtual void  SetTeamId(int32 InId) override;
+
 protected: // Building Shape related propeties
     UPROPERTY(BlueprintReadOnly, EditDefaultsOnly)
     UElementsBuildingAppearence* Appearence;
 
 protected:
-    UPROPERTY(BlueprintReadOnly, EditDefaultsOnly)
-    int32 MaximumHealth;
-
-    UPROPERTY(BlueprintReadWrite, EditDefaultsOnly)
-    int32 CurrentHealth;
+    UPROPERTY(BlueprintReadOnly)
+    int32 TeamId;
 };

@@ -5,7 +5,7 @@
 #include "IElementsActorInterface.generated.h"
 
 UINTERFACE()
-class CARTOGRAPHER_API UElementsActorInterface : public UInterface
+class ELEMENTS_API UElementsActorInterface : public UInterface
 {
     GENERATED_BODY()
 };
@@ -14,6 +14,6 @@ class IElementsActorInterface
 {
     GENERATED_BODY()
 public:
-    virtual void UpdateStatus(float Dt) = 0;
-    virtual void SetTeam();
+    virtual int32 GetTeamId() const     = 0;
+    virtual void  SetTeamId(int32 InId) = 0;
 };

@@ -37,6 +37,7 @@ public class ElementsUI : ModuleRules
 				"CoreUObject",
 				"Engine",
 				"Slate",
+				"UMG",
 				"SlateCore",
 				// ... add private dependencies that you statically link with here ...	
 			}
